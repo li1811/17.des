@@ -15,7 +15,7 @@
             <label for="secondnumber">Finish Number</label>
 
             <input type="number" id="secondnumber" name="secondnumber"><br><br>
-            <button type="button" id="calculatebutton" onclick="findSum(), makeDouble(findSum())">Find Sum</button>
+            <button type="button" id="calculatebutton" onclick="findSum(), multiplyResult(findSum())">Find Sum</button>
 
 
             <p id="result"></p>
@@ -43,8 +43,8 @@
                 document.getElementById("result").innerText = `Result: ${sum}`;
                 return sum;
             }
-            function makeDouble(input) {
-                let result = input * 2;
+            function multiplyResult(input) {
+                let result = input * 10;
                 document.getElementById("result2").innerText = result;
                 console.log(result);
             }
